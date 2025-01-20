@@ -16,12 +16,12 @@ const removeTokens = () => {
   Cookies.remove("refreshToken");
 };
 
-const register = (username: string, password1: string,password2: string) => {
-  return api.post({ username, password1, password2 }, "/api/auth/register/");
+const register = (email: string, password1: string,password2: string) => {
+  return api.post({ email, password1, password2 }, "/api/auth/register/");
 };
 
 const login = (email: string, password: string) => {
-  return api.post({ username: email, password }, "/api/auth/login/");
+  return api.post({ email, password }, "/api/auth/login/");
 };
 
 const logout = () => {
