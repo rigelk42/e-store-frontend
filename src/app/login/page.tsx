@@ -38,7 +38,7 @@ export default function Login() {
       <h1 className="font-bold text-2xl">Sign In</h1>
       <input
         type="email"
-        className="border border-slate-500 rounded p-2"
+        className="border border-slate-500 rounded-sm p-2"
         placeholder="EMail"
         {...register("email", { required: true })}
       />
@@ -47,14 +47,14 @@ export default function Login() {
       )}
       <input
         type="password"
-        className="border border-slate-500 rounded p-2"
+        className="border border-slate-500 rounded-sm p-2"
         placeholder="Password"
         {...register("password", { required: true })}
       />
       {errors.password && (
         <span className="text-sm text-red-600">Password is required.</span>
       )}
-      <button type="submit" className="rounded bg-slate-500 p-2 text-white">
+      <button type="submit" className="rounded-sm bg-slate-500 p-2 text-white">
         Submit
       </button>
     </form>

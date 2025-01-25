@@ -1,8 +1,6 @@
-import classes from "./DeliveryAddressControl.module.css";
-
 export default function DeliveryAddressControl() {
   return (
-    <div className={`${classes["delivery-address-control"]}`}>
+    <div className="w-full flex flex-col justify-center p-2">
       <span className="text-xs text-white">Deliver To</span>
       <span className="text-sm text-white font-bold">Chula Vista 91911</span>
     </div>
